@@ -36,12 +36,22 @@ public class heelandmesh extends StarMacro {
       ((CartesianCoordinateSystem) labCoordinateSystem_0.getLocalCoordinateSystemManager().getObject("hull-CSys"));
 
     simulation_0.get(SimulationPartManager.class).rotateParts(new NeoObjectVector(new Object[] {cadPart_0}),
-                     new DoubleVector(new double[] {1.0, 0.0, 0.0}), new NeoObjectVector(new Object[] {units_1, units_1, units_1}), HEEL_ANGLE(RAD), cartesianCoordinateSystem_0);
+                     new DoubleVector(new double[] {1.0, 0.0, 0.0}),
+                     new NeoObjectVector(new Object[] {units_1, units_1, units_1}), HEEL_ANGLE(RAD), cartesianCoordinateSystem_0);
 
     simulation_0.get(SimulationPartManager.class).rotateParts(new NeoObjectVector(new Object[] {cadPart_0}),
-                     new DoubleVector(new double[] {0.0, 1.0, 0.0}), new NeoObjectVector(new Object[] {units_1, units_1, units_1}), TRIM_ANGLE(RAD), cartesianCoordinateSystem_0);
+                     new DoubleVector(new double[] {0.0, 1.0, 0.0}),
+                     new NeoObjectVector(new Object[] {units_1, units_1, units_1}), TRIM_ANGLE(RAD), cartesianCoordinateSystem_0);
 
     simulation_0.get(SimulationPartManager.class).translateParts(new NeoObjectVector(new Object[] {cadPart_0}),
-                     new DoubleVector(new double[] {0.0, 0.0, HEAVE(m)}), new NeoObjectVector(new Object[] {units_1, units_1, units_1}), cartesianCoordinateSystem_0);
+                     new DoubleVector(new double[] {0.0, 0.0, HEAVE(m)}),
+                     new NeoObjectVector(new Object[] {units_1, units_1, units_1}), cartesianCoordinateSystem_0);
+    
+    MeshPipelineController meshPipelineController_0 = 
+      simulation_0.get(MeshPipelineController.class);
+
+    meshPipelineController_0.generateVolumeMesh();
+
+    simulation_0.getSimulationIterator().run();
   }
 }
