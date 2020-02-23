@@ -27,7 +27,7 @@ public class heelandmesh extends StarMacro {
       simulation_0.getUnitsManager().getPreferredUnits(new IntVector(new int[] {0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0}));
 
     CadPart cadPart_0 = 
-      ((CadPart) simulation_0.get(SimulationPartManager.class).getPart("V40Superkalimera_hull4"));
+      ((CadPart) simulation_0.get(SimulationPartManager.class).getPart("hull_surfaces"));
 
     LabCoordinateSystem labCoordinateSystem_0 = 
       simulation_0.getCoordinateSystemManager().getLabCoordinateSystem();
