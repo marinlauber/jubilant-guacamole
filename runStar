@@ -17,4 +17,4 @@ module load starccm
 NCORE=40
 
 #Run the job from the working directory
-starccm+ -batch -np $NCORE -load hull_bare_equilibrium.sim -batch meshandrun.java  >> hull_bare_equilibrium.txt
+starccm+ -batch -np $NCORE -load simulation.sim -batch meshandrun.java  >> simulation.txt
