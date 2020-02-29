@@ -4,4 +4,4 @@ Define a custom field-function `tools.field functions.new`
 ```
 set VOF replacement in `Continua.Physics.MultiphaseInteraction.PhaseInteractions.Model.VOFPhaseReplacemment`. Set method to `Field Function` in Phase replacement volume fraction limit, use your custom field function.
 
-Set the phase interaction in `VOF_VOF ohase replacement`. Primary phase: Air, Secondary phase: Water.
+Set the phase interaction in `VOF_VOF phase replacement`. Primary phase: Air, Secondary phase: Water.
