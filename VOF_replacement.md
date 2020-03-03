@@ -1,7 +1,7 @@
 ## Star-CCM+ tricks and tips
 
 
-### VOF Replacement (Numerical vetilation)
+### VOF Replacement (Numerical ventilation)
 
 Define a custom field-function `tools.field functions.new`, be very careful that this does not interfere with the free-surface, otherwise you are in for a bad time!
 
